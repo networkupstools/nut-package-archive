@@ -1,0 +1,17 @@
+////
+NOTE:
+- 'env-github' attribute is set on GitHub
+- 'nut-website-root' attribute point to the root of the website, either as a relative path (for NUT website generation) or as the URL of the website (for GitHub)
+////
+
+ifdef::env-github[]
+NUT package archive
+===================
+:nut-website-root:	http://networkupstools.org/
+endif::env-github[]
+
+ifndef::env-github[]
+:nut-website-root:	../
+endif::env-github[]
+
+Here are stored all the past and present packages from link:{nut-website-root}[Network UPS Tools].
